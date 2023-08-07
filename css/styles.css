@@ -1,0 +1,2721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, li, button {
+    text-decoration: none;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --corn: #F3E854;
+    --orange: #FF8000;
+    --orange-pan: #FF5B00;
+    --cadet-gray: #9AA0A8;
+}
+
+#mainBanner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navLinks li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+.navLinks a {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.navLinks a:hover {
+    color: var(--black);
+}
+
+.navLinks li.selected  a {
+    color: var(--black);
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin: 0 10px;
+}
+
+.login:hover {
+    text-decoration: underline;
+}
+
+.cadastro {
+    background: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.cadastro:hover {
+    text-decoration: underline;
+}
+
+.menuMobile {
+    display: none;
+    float: right;
+}
+
+#burgerIcon {
+    position: relative;
+    right: -35px;
+}
+
+#closeIcon {
+    position: relative;
+}
+
+.showIcon {
+    opacity: 1;
+    transition: .8s ease;
+}
+
+.hideIcon {
+    opacity: 0;
+    transition: .8s ease;
+    pointer-events: none;
+}
+
+.menuMobile span {
+    cursor: pointer;
+}
+
+.menuMobile ul {
+    display: none;
+	width: 100%;
+	background-color: var(--orange);
+	position: absolute;
+	left: 0;
+	top: 85px;
+	text-align: center;
+    z-index: 999;
+    list-style: none;
+}
+
+.menuMobile li {
+    padding: 8px 0;
+    border: 1px solid var(--black);
+}
+
+.menuMobile a {
+    display: block;
+    color: var(--black);
+}
+
+.menuMobile a:hover {
+    font-weight: 900;
+}
+
+.menuMobile li.selected  a {
+    color: var(--black);
+}
+
+#ctaBanner {
+    position: relative;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+#banner1 {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+#banner1 h1 {
+    font-size: 1.8rem;
+}
+
+#banner1 > .line {
+	position: absolute;
+	left: 0;
+	top: 10;
+	width: 55px;
+	height: 5px;
+	background: var(--corn);
+}
+
+#banner1 h2 {
+    margin-top: 25px;
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+#banner1 p {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    color: var(--white);
+    line-height: 1.5rem;
+}
+
+.ctaBannerBtn {
+    font-size: 1rem;
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.ctaBannerBtn:hover {
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.banner1Btn {
+    position: absolute;
+    top: 450px;
+    left: 270px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--corn);
+    cursor: pointer;
+}
+
+.banner1Btn:hover {
+    background-color: var(--white);
+}
+
+.banner2Btn {
+    position: absolute;
+    top: 450px;
+    left: 300px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--corn);
+    cursor: pointer;
+}
+
+.banner2Btn:hover {
+    background-color: var(--white);
+}
+
+.btnChecked {
+    background-color: var(--white);
+}
+
+#banner2 {
+    position: absolute;
+	display: inline-block;
+    z-index: 10;
+    left: 0;
+	top: 0;
+}
+
+#banner2 h1 {
+    font-size: 1.8rem;
+}
+
+#banner2 > .line {
+	position: absolute;
+	left: 0;
+	top: 10;
+	width: 55px;
+	height: 5px;
+	background: var(--corn);
+}
+
+#banner2 h2 {
+    margin-top: 25px;
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+#banner2 p {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    color: var(--white);
+    line-height: 1.5rem;
+}
+
+.show {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.hide {
+    opacity: 0;
+    transition: 1s ease;
+    pointer-events: none;
+}
+
+#frangoBanner {
+    position: absolute;
+    top: 159px;
+    left: 450px;
+    z-index: 10;
+}
+
+.maoFrango {
+    position: relative;
+    top: -407px;
+    left: 2px;
+    z-index: 999;
+}
+
+#maoFrangoBanner {
+    position: absolute;
+    top: 467px;
+    left: 1017px;
+}
+
+#ctaBalloons {
+    position: relative;
+    top: 159px;
+    z-index: 1;
+}
+
+.balloons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+#todosCursosBtn {
+    position: relative;
+    top: 200px;
+    left: 0px;
+    z-index: 40;
+}
+
+#ourHistory {
+    position: relative;
+    margin-top: 280px;
+}
+
+#ourHistory h1 {
+    font-size: 1.8rem;
+}
+
+#ourHistory h2 {
+    margin-top: 10px;
+    color: var(--orange-pan);
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+#ourHistory p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#benefits {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#benefits img {
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+#benefits .desktopImg {
+    display: block;
+}
+
+#benefits .mobileImg {
+    display: none;
+}
+
+#benefits .mobileImg540 {
+    display: none;
+}
+
+#categories {
+    margin-top: 60px;
+}
+
+#categories h1 {
+    font-size: 1.2rem;
+}
+
+#categories h2 {
+    margin-top: 10px;
+    color: var(--orange-pan);
+    font-size: 2rem;
+}
+
+#ctaCategories {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#featuredCourses {
+    margin-top: 80px;
+}
+
+#featuredCourses .featCoursesTitle {
+    color: var(--orange-pan);
+    font-size: 2rem;
+}
+
+#featuredCourses .centerCourses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#featuredCourses .bannersCourses {
+    width: 25%;
+    padding: 0 10px;
+    margin: 40px 0;
+}
+
+#featuredCourses .boxSingleCourse {
+    height: 96%;
+}
+
+#featuredCourses .boxSingleCourse img {
+    max-width: 100%;
+}
+
+#featuredCourses .boxSingleCourse h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: var(--black);
+    text-align: start;
+}
+
+#featuredCourses .boxSingleCourse p {
+    margin-top: 10px;
+    text-align: start;
+}
+
+#featuredCourses .space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 15px;
+}
+
+#featuredCourses .space-between h2 {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+#featuredCourses .space-between a {
+    color: var(--black);
+    text-decoration: underline;
+    font-size: .9rem;
+}
+
+#featuredCourses .space-between a:hover {
+    color: var(--orange-pan);
+    font-weight: 900;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#seeMoreBtn {
+    margin-top: 40px;
+}
+
+#testimonialsSection {
+    margin-top: 60px;
+    display: flex;
+}
+
+#testimonialsIntro {
+    flex-basis: 30%;
+}
+
+#testimonialsIntro h1 {
+    font-size: 1.2rem;
+}
+
+#testimonialsIntro h2 {
+    margin-top: 10px;
+    color: var(--orange-pan);
+    font-size: 2rem;
+}
+
+#differentials {
+    width: 100%;
+    margin-top: 60px;
+    background-color: var(--orange);
+}
+
+#differentialsTexts {
+    display: flex;
+}
+
+#differentialsTitles {
+    flex-basis: 30%;
+    margin-top: 60px;
+}
+
+#differentialsTitles h1 {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+#differentialsTitles h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+#differentialsMainParagraph {
+    flex-basis: 70%;
+    margin-top: 95px;
+    text-align: justify;
+    color: var(--white);
+}
+
+#differentialsIcons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#differentialsIcons figure {
+    margin: 0 10px 60px 10px;
+    flex-basis: 25%;
+}
+
+#differentialsIcons figcaption {
+    color: var(--white);
+    margin-top: 15px;
+}
+
+#differentialsIcons figcaption h2 {
+    font-size: 1rem;
+}
+
+#differentialsIcons figcaption span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange-pan);
+    margin: 5px 0;
+}
+
+#differentialsIcons figcaption p {
+    font-size: .9rem;
+}
+
+#students {
+    margin: 60px 0;
+}
+
+#students .students-title {
+    color: var(--orange-pan);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+#students .center-student {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+#students .student-wraper {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+}
+
+#students .box-single-student {
+    height: 100%;
+}
+
+#students .box-single-student img {
+    width: 100%;
+}
+
+#footerIndex {
+    width: 100%;
+    background-color: var(--orange-pan);
+}
+
+#footerIndex .centerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#footerIndex .topFooter {
+    width: 25%;
+    margin-top: 40px;
+}
+
+#footerIndex .boxSingleFooter {
+    height: 100%;
+}
+
+#footerIndex .boxSingleFooter h3:hover {
+    color: var(--black);
+}
+
+#footerIndex .boxSingleFooter .noHover:hover {
+    color: var(--white);
+}
+
+#footerIndex .boxSingleFooter h4:hover {
+    color: var(--black);
+}
+
+#footerIndex .space {
+    padding-left: 80px;
+}
+
+#footerIndex .space2 {
+    padding-left: 40px;
+}
+
+#footerIndex .boxSingleFooter img {
+    max-width: 100%;  
+}
+
+#footerIndex .boxSingleFooter .socialMedias {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#footerIndex .boxSingleFooter h3 {
+    color: var(--white);
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#footerIndex .boxSingleFooter h4 {
+    color: var(--white);
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#footerIndex .loginRegister {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#loginFooter {
+    color: var(--corn);
+    border: 2px solid var(--corn);
+    border-radius: 10px;
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+#loginFooter:hover {
+    text-decoration: underline;
+}
+
+#registerFooter {
+    background: var(--corn);
+    border: 2px solid var(--corn);
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+#registerFooter:hover {
+    text-decoration: underline;
+}
+
+#footerIndex span {
+    width: 100%;
+    height: 1px;
+    background-color: var(--corn);
+    margin-top: 20px;
+}
+
+#footerIndex .bottomFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 40px 0;
+}
+
+#footerIndex .bottomFooter p {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+
+
+/* --- FAQ --- */
+
+#faqMainBanner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 420px;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#faqChicken2 {
+    position: relative;
+    z-index: 1;
+    left: 640px;
+}
+
+.pageTitle2 {
+    position: relative;
+    top: -190px;
+    left: -120px;
+    display: inline-block;
+    z-index: 1;
+    color: var(--white);
+    font-size: 3.5rem;   
+}
+
+.pageSubtitle2 {
+    position: relative;
+    top: -140px;
+    left: -225px;
+    display: inline-block;
+    z-index: 1;
+    color: var(--white);
+    font-size: 2.5rem; 
+}
+
+#mainContentFaq {
+    position: relative;
+    top: 60px;
+    margin-bottom: 140px;
+}
+
+#mainContentFaq .containerFluid {
+    width: 96%;
+    margin: 0 auto;
+}
+
+#mainContentFaq .accordion {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border: 2px solid var(--orange-pan);
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+#mainContentFaq .accordion .icon {
+    margin: 0 10px 0 0;
+    width: 4%;
+    height: 40px;
+    background: url('../assets/icones_faq/btn01_30x30.png') no-repeat 5px 5px;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+#mainContentFaq .accordion h3 {
+    width: 96%;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: 500;
+    color: var(--orange-pan);
+    transition: all .5s ease-in; 
+}
+
+#mainContentFaq .active {
+    background-color: var(--orange-pan);
+}
+
+#mainContentFaq .active h3 {
+    color: var(--white);
+}
+
+#mainContentFaq .active .icon {
+    background: url('../assets/icones_faq/btn02_30x30.png') no-repeat 5px 5px;
+}
+
+#mainContentFaq .panel {
+    padding: 0 15px;
+    border-left: 1px solid var(--orange-pan);
+    margin-left: 25px;
+    font-size: 1rem;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0px;
+    transition: all .5s ease-in;
+}
+
+
+
+/* SOBRE */
+
+#aboutMainBanner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 420px;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#aboutChicken {
+    position: relative;
+    z-index: 1;
+    left: 640px;
+    top: 19px;
+}
+
+.pageTitle {
+    position: relative;
+    display: inline-block;
+    top: -140px;
+    left: -100px;
+    z-index: 1;
+    color: var(--white);
+    font-size: 3.5rem;   
+}
+
+#aboutFirstPart {
+    position: relative;
+    width: 96%;
+    margin: 30px auto;
+}
+
+#aboutFirstPart h3 {
+    font-size: 2rem;
+    color: var(--orange-pan);
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+#aboutFirstPart p {
+    font-size: 1.2rem;
+    color: var(--black);
+    text-align: justify;
+}
+
+#aboutFirstPart li {
+    font-size: 1.2rem;
+    color: var(--black);
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.mission {
+    margin-bottom: 40px;
+}
+
+.vision {
+    margin-bottom: 40px;
+}
+
+.values {
+    margin-bottom: 40px;
+}
+
+#aboutSecondPart {
+    position: relative;
+    background-color: var(--orange);
+    padding: 10px 0;
+    width: 100%;
+    height: 650px;
+}
+
+#aboutSecondPart h3 {
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+    margin: 30px auto;
+}
+
+#aboutSecondPart .team {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+#aboutSecondPart .team img {
+    margin: 10px;
+}
+
+#aboutSecondPart .team h4 {
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+#aboutSecondPart .team h5 {
+    font-size: 1.1rem;
+    color: var(--white);
+    font-style: italic;;
+}
+
+#aboutSecondPart .team .gabriela {
+    width: 25%;
+}
+
+#aboutSecondPart .team .aline {
+    width: 25%;
+}
+
+#aboutSecondPart .team .patrine {
+    width: 25%;
+}
+
+#aboutSecondPart .team .eduarda {
+    width: 25%;
+}
+
+#aboutSecondPart .team .presentationNone {
+    display: none;
+}
+
+#aboutSecondPart .team .linkedinNone {
+    display: none;
+}
+
+#aboutSecondPart .teamPresentation {
+    display: flex;
+    text-align: center;   
+}
+
+#aboutSecondPart .teamPresentation .gabrielaPresentation {
+    width: 25%;
+}
+
+#aboutSecondPart .teamPresentation .alinePresentation {
+    width: 25%;
+}
+
+#aboutSecondPart .teamPresentation .patrinePresentation {
+    width: 25%;
+}
+
+#aboutSecondPart .teamPresentation .eduardaPresentation {
+    width: 25%;
+}
+
+#aboutSecondPart .teamPresentation p {
+    text-align: justify;
+    color: var(--white);
+    margin: 20px 10px 0 10px;
+}
+
+#aboutSecondPart .linkedin {
+    display: flex;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#aboutSecondPart .linkedin .linkedinGabriela {
+    width: 25%;
+}
+
+#aboutSecondPart .linkedin .linkedinAline {
+    width: 25%;
+}
+
+#aboutSecondPart .linkedin .linkedinPatrine {
+    width: 25%;
+}
+
+#aboutSecondPart .linkedin .linkedinEduarda {
+    width: 25%;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1175px) {
+    
+    /* -INDEX- */
+
+    .container {
+        width: 80%;
+    }
+
+    .navLinks li {
+        margin: 5px;
+    }
+    
+    .navLinks a {
+        color: var(--white);
+        font-weight: bold;
+        font-size: 0.75rem;
+    }
+
+    .login {
+        padding: 5.6px 21px;
+        font-size: 0.75rem;
+        margin: 0 5px;
+    }
+    
+    .cadastro {
+        padding: 5.6px 14px;
+        font-size: 0.75rem;
+    }
+
+    #frangoBanner {
+        top: 292px; 
+        left: 420px;
+        width: 472.5px; 
+        height: 343.7px; 
+    }
+    
+    #maoFrangoBanner {
+        top: 507px; 
+        left: 816px;
+        width: 74.2px; 
+        height: 128.1px; 
+    }
+
+    #ctaBalloons {
+        top: 175px; 
+    }
+
+    .BalloonSize {
+        width: 184.8px;
+        height: 231px;
+    }
+
+    #todosCursosBtn {
+        right: 450px;
+    }
+
+    .categoriesBalloonSize {
+        width: 117px;
+        height: 152px;
+    }
+
+    .bannersCoursesSize {
+        width: 213px; 
+        height: 127px; 
+    }
+
+    #featuredCourses .boxSingleCourse h2 {
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+    
+    #featuredCourses .space-between {
+        padding-top: 10px;
+    }
+    
+    #featuredCourses .space-between h2 {
+        font-size: 1.1rem;
+    }
+    
+    #testimonialsIntro h2 {
+        font-size: 1.8rem;
+    }
+
+    .footerLogo {
+        width: 215px;
+        height: 86px; 
+    }
+
+    .socialMediasSize {
+        width: 38px;
+        height: 38px;
+    }
+
+    #footerIndex .boxSingleFooter h3 {
+        font-size: 1.1rem;
+    }
+    
+    #footerIndex .boxSingleFooter h4 {
+        font-size: 0.9rem;
+    }
+
+    #loginFooter {
+        padding: 6.4px 24px;
+        font-size: 0.8rem;
+    }
+    
+    #registerFooter {
+        padding: 6.4px 16px;
+        font-size: 0.8rem;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 0.8rem;
+    }
+
+    #footerIndex .bottomFooter p {
+        font-size: 0.9rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    #faqChicken2 {
+        left: 560px;
+    }
+    
+    .pageTitle2 {
+        left: -180px;
+    }
+    
+    .pageSubtitle2 {
+        left: -285px;
+    }
+    
+    #mainContentFaq {
+        top: 50px;
+        margin-bottom: 100px;
+    }
+    
+    #mainContentFaq .accordion .icon {
+        width: 6%;
+    }
+    
+    #mainContentFaq .accordion h3 {
+        width: 94%;
+    }
+
+
+
+    /* -SOBRE- */
+    
+    #aboutChicken {
+        left: 560px;
+    }
+    
+    .pageTitle {
+        left: -160px; 
+    }
+    
+    #aboutSecondPart {
+        height: 740px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    /* -INDEX- */
+
+    .menuDesktop {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+    }
+    
+    #banner1 h2 {
+        font-size: 2.8rem;
+    }
+    
+    #banner2 h2 {
+        font-size: 2.8rem;
+    }
+
+    #frangoBanner {
+        left: 350px;
+    }
+
+    #maoFrangoBanner {
+        top: 543px; 
+        left: 746px;
+    }
+
+    #ctaBalloons {
+        top: 205px;
+    }
+
+    #todosCursosBtn {
+        top: 230px;
+    }
+
+    #ourHistory {
+        margin-top: 330px;
+    }
+
+    .bannersCoursesSize {
+        width: 191.7px; 
+        height: 114.3px; 
+    }
+
+    #featuredCourses .boxSingleCourse h2 {
+        font-size: 1rem;
+    }
+    
+    #featuredCourses .space-between h2 {
+        font-size: 1rem;
+    }
+    
+    #differentialsIcons figcaption h2 {
+        font-size: 0.9rem;
+    }
+
+    #students .box-single-student img {
+        width: 160px; 
+        height: 64px; 
+    }
+
+    .footerLogo {
+        width: 204.25px; 
+        height: 81.7px; 
+    }
+
+    #footerIndex .boxSingleFooter h3 {
+        font-size: 1rem;
+    }
+    
+    #footerIndex .boxSingleFooter h4 {
+        font-size: 0.8rem;
+    }
+
+    #loginFooter {
+        font-size: 0.7rem;
+    }
+    
+    #registerFooter {
+        font-size: 0.7rem;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 1059px) {
+
+    /* -FAQ- */
+
+    .pageSubtitle2 {
+        top: -140px;
+        left: -285px;
+    }
+
+
+
+    /* -SOBRE- */
+
+    #aboutChicken {
+        left: 480px;
+    }
+    
+    .pageTitle {
+        left: -200px; 
+    }
+
+}
+
+@media screen and (max-width: 1054px) {
+
+    /* -FAQ- */
+
+    .pageSubtitle2 {
+        top: -195px;
+        left: 155px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* -INDEX- */
+
+    #frangoBanner {
+        top: 322px; 
+        left: 340px; 
+        width: 425.25px; 
+        height: 309.33px; 
+    }
+    
+    #maoFrangoBanner {
+        top: 552px; 
+        left: 696px; 
+        width: 66.78px; 
+        height: 115.29px; 
+    }
+
+    #ctaBalloons {
+        top: 210px;
+    }
+
+    .BalloonSize {
+        width: 175.56px; 
+        height: 219.45px; 
+    }
+
+    #todosCursosBtn {
+        width: 250.8px;  
+        height: 43.7px; 
+    }
+
+    #benefits {
+        margin-top: 80px;
+    }
+    
+    #benefits img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #benefits .desktopImg {
+        display: none;
+    }
+
+    #benefits .mobileImg {
+        display: block;
+    }
+
+    .categoriesBalloonSize {
+        width: 99.45px; 
+        height: 129.2px; 
+    }
+
+    .bannersCoursesSize {
+        width: 172.53px; 
+        height: 102.87px; 
+    }
+
+    #featuredCourses .boxSingleCourse h2 {
+        font-size: .9rem;
+    }
+    
+    #featuredCourses .space-between h2 {
+        font-size: .9rem;
+    }
+
+    #seeMoreBtn {
+        width: 250.8px; 
+        height: 43.7px; 
+    }
+
+    .footerLogo {
+        width: 194.03px; 
+        height: 77.61px; 
+    }
+
+    #loginFooter {
+        font-size: 0.6rem;
+    }
+    
+    #registerFooter {
+        font-size: 0.6rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    #faqChicken2 {
+        left: 430px;
+    }
+    
+    .pageTitle2 {
+        left: -295px;
+    }
+    
+    .pageSubtitle2 {
+        top: -190px;
+        left: 40px;
+    }
+
+    #mainContentFaq {
+        top: 0px;
+        margin-bottom: 80px;
+    }
+    
+    #mainContentFaq .accordion .icon {
+        width: 6%;
+    }
+    
+    #mainContentFaq .accordion h3 {
+        width: 94%;
+    }
+
+
+
+    /* -SOBRE- */
+
+    #aboutChicken {
+        left: 460px;
+    }
+    
+    .pageTitle {
+        left: -220px; 
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    /* -INDEX- */
+
+    #ctaBanner {
+        margin-top: 60px;
+    }
+
+    #banner1 h2 {
+        font-size: 2.6rem;
+    }
+    
+    #banner2 h2 {
+        font-size: 2.6rem;
+    }
+
+    #frangoBanner {
+        top: 371px; 
+        left: 330px; 
+        width: 382.72px; 
+        height: 278.39px; 
+    }
+    
+    #maoFrangoBanner {
+        top: 593px; 
+        left: 650px; 
+        width: 60.10px; 
+        height: 103.76px; 
+    }
+
+    #ctaBalloons {
+        top: 245px;
+    }
+
+    .BalloonSize {
+        width: 158px; 
+        height: 197.5px; 
+    }
+
+    #todosCursosBtn {
+        top: 270px;
+    }
+
+    .categoriesBalloonSize {
+        width: 94.47px; 
+        height: 122.74px; 
+    }
+
+    .bannersCoursesSize {
+        width: 163.90px; 
+        height: 97.72px; 
+    }
+
+    #featuredCourses .boxSingleCourse p {
+        font-size: .9rem;
+    }
+    
+    #testimonialsIntro h2 {
+        font-size: 1.8rem;
+    }
+
+    #differentialsIcons figcaption h2 {
+        font-size: 0.8rem;
+    }
+
+    #students .box-single-student img {
+        width: 136px; 
+        height: 54.4px; 
+    }
+
+    .footerLogo {
+        width: 183.82px; 
+        height: 73.53px; 
+    }
+
+    #footerIndex .boxSingleFooter h3 {
+        font-size: .9rem;
+    }
+    
+    #footerIndex .boxSingleFooter h4 {
+        font-size: 0.7rem;
+    }
+
+    #loginFooter {
+        padding: 5.76px 21.6px;
+        font-size: 0.6rem;    
+    }
+    
+    #registerFooter {
+        padding: 5.76px 14.4px;
+        font-size: 0.6rem;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 0.6rem;
+    }
+
+
+
+    /* -SOBRE- */
+
+    #aboutChicken {
+        left: 420px;
+    }
+    
+    .pageTitle {
+        left: -260px; 
+    }
+
+    #aboutSecondPart {
+        height: 760px;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    /* -SOBRE- */
+
+    #aboutChicken {
+        left: 380px;
+    }
+    
+    .pageTitle {
+        left: -300px; 
+    }
+
+    #aboutSecondPart {
+        height: 780px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+
+    /* -INDEX- */
+
+    .footerLogo {
+        width: 164.53px; 
+        height: 66.17px; 
+    }
+
+    .socialMediasSize {
+        width: 34px;
+        height: 34px;
+    }
+
+    #footerIndex .space {
+        padding-left: 40px;
+    }
+    
+    #footerIndex .space2 {
+        padding-left: 20px;
+    }
+
+    #loginFooter {
+        padding: 5.18px 19.44px;
+        font-size: 0.5rem;    
+    }
+    
+    #registerFooter {
+        padding: 5.18px 12.96px;
+        font-size: 0.5rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    #faqChicken2 {
+        top: 30px;
+        left: 340px;
+        width: 297.9px;
+        height: 288px;
+    }
+
+    .pageTitle2 {
+        top: -160px;
+        left: -257px;
+        font-size: 2.8rem;   
+    }
+    
+    .pageSubtitle2 {
+        top: -120px;
+        left: -342px;
+        font-size: 1.8rem; 
+    }
+
+
+
+    /* -SOBRE- */
+
+    #aboutChicken {
+        top: 48px;
+        left: 360px;
+        width: 334.8px;
+        height: 270px;
+    }
+
+    .pageTitle {
+        top: -80px;
+        left: -280px; 
+    }
+
+    #aboutFirstPart {
+        margin: 80px auto;
+    }
+
+    #aboutSecondPart {
+        height: 100%;
+    }
+
+    #aboutSecondPart .team {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutSecondPart .team .gabriela {
+        width: 100%;
+    }
+
+    #aboutSecondPart .team .aline {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    #aboutSecondPart .team .patrine {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #aboutSecondPart .team .eduarda {
+        width: 100%;
+    }
+
+    #aboutSecondPart .team .presentationNone {
+        display: flex;
+        color: var(--white);
+        margin: 20px 10px 0 10px;
+        text-align: justify;
+    }
+
+    #aboutSecondPart .team .linkedinNone {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #aboutSecondPart .team .eduarda {
+        margin-bottom: 20px;
+    }
+
+    #aboutSecondPart .teamPresentation {
+        display: none;
+    }
+
+    #aboutSecondPart .linkedin {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 816px) {
+
+    /* -INDEX- */
+
+    #frangoBanner {
+        top: 371px; 
+        left: 280px; 
+        width: 382.72px; 
+        height: 278.39px; 
+    }
+    
+    #maoFrangoBanner {
+        top: 593px; 
+        left: 600px; 
+        width: 60.10px; 
+        height: 103.76px; 
+    }
+
+    .categoriesBalloonSize {
+        width: 76.72px; 
+        height: 99.68px; 
+    }
+
+    .bannersCoursesSize {
+        width: 147.51px; 
+        height: 87.94px; 
+    }
+
+    #differentialsIcons figcaption h2 {
+        font-size: 0.7rem;
+    }
+
+    #students .student-wraper {
+        width: 33%;
+    }
+
+    .footerLogo {
+        width: 164.53px; 
+        height: 66.17px; 
+    }
+
+    .socialMediasSize {
+        width: 34px;
+        height: 34px;
+    }
+
+    #footerIndex .space {
+        padding-left: 40px;
+    }
+    
+    #footerIndex .space2 {
+        padding-left: 20px;
+    }
+
+    #loginFooter {
+        padding: 5.18px 19.44px;
+        font-size: 0.5rem;    
+    }
+    
+    #registerFooter {
+        padding: 5.18px 12.96px;
+        font-size: 0.5rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    #faqChicken2 {
+        top: 30px;
+        left: 320px;
+        width: 297.9px;
+        height: 288px;
+    }
+
+    .pageTitle2 {
+        top: -150px;
+        left: -277px;
+        font-size: 2.8rem;   
+    }
+    
+    .pageSubtitle2 {
+        top: -150px;
+        left: 25px;
+        font-size: 1.8rem; 
+    }
+    
+    #mainContentFaq {
+        top: 40px;
+        margin-bottom: 100px;
+    }
+
+    #mainContentFaq .accordion .icon {
+        width: 8%;
+    }
+    
+    #mainContentFaq .accordion h3 {
+        width: 92%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* -INDEX- */
+
+    #frangoBanner {
+        display: none;
+    }
+    
+    #maoFrangoBanner {
+        display: none;
+    }
+
+    #ctaBalloons {
+        top: 150px; 
+    }
+
+    .BalloonSize {
+        width: 134.3px; 
+        height: 167.87px; 
+    }
+    
+    #todosCursosBtn {
+        top: 180px;
+    }
+
+    #ourHistory {
+        margin-top: 260px;
+    }
+
+    .categoriesBalloonSize {
+        width: 80.29px; 
+        height: 104.32px; 
+    }
+
+    #featuredCourses {
+        margin-top: 60px;
+    }
+
+    #featuredCourses .bannersCourses {
+        margin: 20px 0;
+    }
+
+    .bannersCoursesSize {
+        width: 139.31px; 
+        height: 83.06px; 
+    }
+
+    #featuredCourses .boxSingleCourse h2 {
+        font-size: .8rem;
+    }
+
+    #featuredCourses .boxSingleCourse p {
+        font-size: .8rem;
+    }
+
+    #featuredCourses .space-between {
+        padding-top: 5px;
+    }
+
+    #featuredCourses .space-between h2 {
+        font-size: .8rem;
+    }
+
+    #featuredCourses .space-between a {
+        font-size: .8rem;
+    }
+
+    #differentialsIcons figcaption h2 {
+        font-size: 0.7rem;
+    }
+    
+    #differentialsIcons figcaption p {
+        font-size: 0.9rem;
+    }
+
+    .footerLogo {
+        width: 165.43px; 
+        height: 66.17px; 
+    }
+
+    .socialMediasSize {
+        width: 34px; 
+        height: 34px; 
+    }
+
+    #footerIndex .space {
+        padding-left: 30px;
+    }
+    
+    #footerIndex .space2 {
+        padding-left: 10px;
+    }
+
+    #loginFooter {
+        padding: 4.66px 17.49px; 
+    }
+    
+    #registerFooter {
+        padding: 4.66px 11.66px;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 0.5rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    #faqChicken2 {
+        top: 30px;
+        left: 320px;
+        width: 297.9px;
+        height: 288px;
+    }
+
+    .pageTitle2 {
+        top: -150px;
+        left: -277px;
+        font-size: 2.8rem;   
+    }
+    
+    .pageSubtitle2 {
+        top: -150px;
+        left: 25px;
+        font-size: 1.8rem; 
+    }
+    
+    #mainContentFaq {
+        top: 40px;
+        margin-bottom: 100px;
+    }
+
+    #mainContentFaq .accordion .icon {
+        width: 10%;
+    }
+    
+    #mainContentFaq .accordion h3 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+
+
+    /* -SOBRE- */
+
+    #aboutChicken {
+        top: 74px;
+        left: 320px;
+        width: 301.32px;
+        height: 243px;
+    }
+
+    .pageTitle {
+        top: -50px;
+        left: -260px; 
+    }
+
+    #aboutFirstPart {
+        top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 705px) {
+
+    /* -INDEX- */
+
+    .footerLogo {
+        width: 148.88px; 
+        height: 59.55px; 
+    }
+
+    .socialMediasSize {
+        width: 28px; 
+        height: 28px; 
+    }
+
+
+    #loginFooter {
+        padding: 3.77px 14.16px;
+        font-size: 0.5rem;    
+    }
+    
+    #registerFooter {
+        padding: 3.77px 9.44px;
+        font-size: 0.5rem;
+    }
+
+
+
+
+    /* -FAQ- */
+
+    #faqChicken2 {
+        display: none;
+    }
+
+    .pageTitle2 {
+        top: 80px;
+        left: 65px;
+        font-size: 3.5rem;   
+    }
+    
+    .pageSubtitle2 {
+        top: 120px;
+        left: -40px;
+        font-size: 2.5rem; 
+    }
+    
+    #mainContentFaq {
+        top: 320px;
+        margin-bottom: 380px;
+    }
+
+
+
+    /* -SOBRE- */
+
+    #aboutChicken {
+        display: none;
+    }
+
+    .pageTitle {
+        top: 80px;
+        left: 160px;
+    }
+
+    #aboutFirstPart {
+        top: 200px;
+    }
+
+    #aboutSecondPart {
+        margin-top: 250px;
+        /* height: 760px; */
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    /* -INDEX- */
+
+    #footerIndex .centerFooter {
+        flex-direction: column;
+    }
+    
+    #footerIndex .topFooter {
+        width: 100%;
+    }
+
+    .footerLogo {
+        width: 268px; 
+        height: 107px; 
+    }
+
+    .socialMediasSize {
+        width: 48px; 
+        height: 48px; 
+    }
+
+    #footerIndex .space {
+        display: none;
+    }
+    
+    #footerIndex .space2 {
+        display: none;
+    }
+    
+    #footerIndex .boxSingleFooter h3 {
+        font-size: 1.8rem;
+        flex-direction: column;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 1.2rem;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+    #footerIndex .loginRegister {
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    
+    #loginFooter {
+        padding: 8px 30px;
+        font-size: 1rem;
+    }
+
+    #registerFooter {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+    
+    #footerIndex .bottomFooter p {
+        font-size: .8rem;
+    }
+
+    #footerIndex .topFooter {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    /* -INDEX- */
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 10px 10%;
+        z-index: 999999;
+        transition: 0.6s ease-in-out;
+        height: 50px;
+    }
+
+    header.sticky {
+        background-color: var(--white);
+        opacity: 0.97;
+    }
+
+    header.sticky ul {
+        background-color: var(--white);
+        opacity: 0.97;
+    }
+
+    #logo {
+        width: 112.75px;
+        height: 46.75px;
+    }
+
+    .menuMobile ul {
+        top: 50px;
+    }
+
+    #ctaBanner {
+        margin-top: 100px;
+    }
+
+    #banner1 h2 {
+        font-size: 1.9rem;
+    }
+    
+    #banner2 h2 {
+        font-size: 1.9rem;
+    }
+
+    .banner1Btn {
+        top: 430px;
+        left: 190px;
+    }
+    
+    .banner2Btn {
+        top: 430px;
+        left: 220px;
+    }
+
+    #ctaBalloons {
+        top: 200px; 
+    }
+
+    #ctaBalloons .balloons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BalloonSize {
+        margin-top: 10px;
+        width: 237.6px; 
+        height: 297px; 
+    }
+
+    #todosCursosBtn {
+        top: 220px;
+        left: 77px;
+    }
+
+    #ourHistory {
+        margin-top: 300px;
+    }
+
+    #ourHistory h1 {
+        font-size: 1.6rem;
+    }
+
+    #ourHistory h2 {
+        font-size: 2.4rem;
+    }
+
+    #ourHistory p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    #benefits {
+        background-color: var(--orange);
+        border-radius: 25px;
+    }
+
+    #benefits .mobileImg {
+        display: none;
+    }
+    
+    #benefits .mobileImg540 {
+        display: block;
+        margin: 30px auto;
+    }
+
+    #benefits .mobileImg540 h2 {
+        color: var(--corn);
+        font-size: 2.2rem;
+    }
+    
+    #benefits .mobileImg540 h3 {
+        color: var(--corn);
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    #benefits .mobileImg540 li {
+        color: var(--white);
+        margin-top: 20px;
+    }
+    
+    #benefits .mobileImg540 p {
+        color: var(--white);
+        font-weight: bold;
+    }
+    
+    #benefits .mobileImg540 h4 {
+        color: var(--white);
+        margin-top: 30px;
+        font-size: .8rem;
+    }
+
+    #ctaCategories {
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .categoriesBalloonSize {
+        width: 146px; 
+        height: 190px;
+        margin-top: 10px;
+    }
+
+    #featuredCourses .featCoursesTitle {
+        margin-top: 80px;
+    }
+
+    #featuredCourses .bannersCoursesSize {
+        width: 266px;
+        height: 158px;
+        margin-top: 40px;
+    }
+    
+    #featuredCourses .bannersCourses {
+        width: 100%;
+    }
+    
+    #featuredCourses .boxSingleCourse {
+        text-align: center;
+    }
+    
+    #featuredCourses .boxSingleCourse h2 {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    #featuredCourses .boxSingleCourse p {
+        text-align: center;
+    }
+    
+    #featuredCourses .space-between {
+        padding-top: 10px;
+    }
+    
+    #featuredCourses .space-between h2 {
+        font-size: 1.4rem;
+        margin-left: 10px;
+    }
+    
+    #featuredCourses .space-between a {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+
+    #seeMoreBtn {
+        margin: 60px auto 0 auto;
+    }
+
+    #testimonialsSection {
+        flex-direction: column;
+    }
+    
+    #differentialsTexts {
+        flex-direction: column;
+    }
+    
+    #differentialsTitles h2 {
+        font-size: 2.4rem;
+    }
+    
+    #differentialsMainParagraph {
+        margin-top: 30px;
+    }
+    
+    #differentialsIcons {
+        flex-direction: column;
+    }
+    
+    #differentialsIcons figcaption h2 {
+        font-size: 1.2rem;
+    }
+    
+    #differentialsIcons figcaption p {
+        font-size: 1rem;
+    }
+
+    #students .student-wraper {
+        width: 50%;
+    }
+
+
+
+    /* -FAQ- */
+
+    .pageTitle2 {
+        top: 160px;
+        left: 20px;
+    }
+    
+    .pageSubtitle2 {
+        top: 150px;
+        left: 20px;
+    }
+    
+    #mainContentFaq {
+        top: 360px;
+        margin-bottom: 420px;
+    }
+
+    #mainContentFaq .accordion {
+        padding: 6px;
+    }
+
+    #mainContentFaq .accordion h3 {
+        font-size: 1.1rem;
+    }
+
+
+
+    /* -SOBRE- */
+
+    .pageTitle {
+        top: 180px;
+        left: 100px;
+    }
+
+    #aboutFirstPart {
+        top: 320px;
+    }
+
+    #aboutSecondPart {
+        margin-top: 380px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    /* -INDEX- */
+
+    #ctaBanner .sameLine {
+        display: none;
+    }
+    #banner1 h1 {
+        font-size: 1.5rem;
+    }
+    
+    #banner2 h1 {
+        font-size: 1.5rem;
+    }
+
+    #banner1 h2 {
+        font-size: 1.7rem;
+    }
+    
+    #banner2 h2 {
+        font-size: 1.7rem;
+    }
+
+    #banner1 p {
+        font-size: 1.2rem;
+    }
+    
+    #banner2 p {
+        font-size: 1.2rem;
+    }
+
+    .banner1Btn {
+        top: 460px;
+        left: 140px;
+    }
+    
+    .banner2Btn {
+        top: 460px;
+        left: 170px;
+    }
+
+    #ctaBalloons {
+        top: 140px;
+    }
+
+    #todosCursosBtn {
+        left: 26px;
+    }
+
+    #ourHistory h1 {
+        font-size: 1.6rem;
+    }
+
+    #ourHistory h2 {
+        font-size: 2rem;
+    }
+
+    #ourHistory p {
+        font-size: 1.1rem;
+    }
+
+    #benefits .mobileImg540 h2 {
+        font-size: 1.5rem;
+    }
+    
+    #benefits .mobileImg540 h3 {
+        font-size: 1.5rem;
+    }
+    
+    #benefits .mobileImg540 p {
+        font-size: 1.1rem;
+    }
+    
+    #benefits .mobileImg540 h4 {
+        font-size: .8rem;
+    }
+
+    #testimonialsSection {
+        margin-top: 100px;
+    }
+
+    #students .student-wraper {
+        width: 100%;
+    }
+
+    #footerIndex .boxSingleFooter h3 {
+        font-size: 1.6rem;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 1.1rem;
+    }
+
+    #footerIndex .bottomFooter p {
+        font-size: .6rem;
+    }
+
+
+
+    /* -FAQ- */
+    
+    .pageTitle2 {
+        top: 190px;
+        font-size: 2.8rem;
+    }
+    
+    .pageSubtitle2 {
+        top: 190px;
+        font-size: 1.8rem;
+    }
+    
+    #mainContentFaq {
+        top: 400px;
+        margin-bottom: 460px;
+    }
+
+    #mainContentFaq .accordion .icon {
+        width: 15%;
+    }
+
+    #mainContentFaq .accordion h3 {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+
+
+    /* -SOBRE- */
+
+    .pageTitle {
+        left: 30px;
+    }
+
+    #aboutFirstPart h3 {
+        font-size: 2rem;
+    }
+    
+    #aboutFirstPart p {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+    
+    #aboutFirstPart li {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    /* -INDEX- */
+
+    #banner1 h1 {
+        font-size: 1.4rem;
+    }
+    
+    #banner2 h1 {
+        font-size: 1.4rem;
+    }
+
+    #banner1 h2 {
+        font-size: 1.6rem;
+    }
+    
+    #banner2 h2 {
+        font-size: 1.6rem;
+    }
+
+    #banner1 p {
+        font-size: 1.1rem;
+    }
+    
+    #banner2 p {
+        font-size: 1.1rem;
+    }
+
+    .banner1Btn {
+        left: 120px;
+    }
+    
+    .banner2Btn {
+        left: 150px;
+    }
+    #todosCursosBtn {
+        left: 12px;
+    }
+
+    #ourHistory h2 {
+        font-size: 1.8rem;
+    }
+
+    #benefits .mobileImg540 h2 {
+        font-size: 1.4rem;
+    }
+    
+    #benefits .mobileImg540 h3 {
+        font-size: 1.4rem;
+    }
+
+    #footerIndex .boxSingleFooter h3 {
+        font-size: 1.4rem;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: 1rem;
+    }
+
+    #loginFooter {
+        font-size: 0.8rem;
+    }
+    
+    #registerFooter {
+        font-size: 0.8rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    .pageTitle2 {
+        left: 10px;
+    }
+    
+    .pageSubtitle2 {
+        left: 10px;
+    }
+
+
+
+    /* -SOBRE- */
+
+    .pageTitle {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+
+    /* -INDEX- */
+
+    #banner1 h1 {
+        font-size: 1.2rem;
+    }
+    
+    #banner2 h1 {
+        font-size: 1.2rem;
+    }
+
+    #banner1 h2 {
+        font-size: 1.3rem;
+    }
+    
+    #banner2 h2 {
+        font-size: 1.3rem;
+    }
+
+    #banner1 p {
+        font-size: 1rem;
+    }
+    
+    #banner2 p {
+        font-size: 1rem;
+    }
+
+    .ctaBannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner1Btn {
+        top: 440px;
+        left: 100px;
+    }
+    
+    .banner2Btn {
+        top: 440px;
+        left: 130px;
+    }
+    #todosCursosBtn {
+        left: -10px;
+    }
+
+    #ourHistory h2 {
+        font-size: 1.6rem;
+    }
+
+    #benefits .mobileImg540 h2 {
+        font-size: 1.3rem;
+    }
+    
+    #benefits .mobileImg540 h3 {
+        font-size: 1.2rem;
+    }
+
+    #benefits .mobileImg540 p {
+        font-size: 1.1rem;
+    }
+
+    #featuredCourses .bannersCoursesSize {
+        width: 212.8px;
+        height: 126.4px;
+        margin-top: 30px;
+    }
+    
+    #featuredCourses .space-between h2 {
+        font-size: 1.2rem;
+    }
+
+    .footerLogo {
+        width: 213.6px; 
+        height: 85.6px; 
+    }
+
+    .socialMediasSize {
+        width: 40px;
+        height: 40px;
+    }
+
+    #footerIndex .boxSingleFooter h3 {
+        font-size: 1.2rem;
+    }
+
+    #footerIndex .topFooter .emailSize {
+        font-size: .8rem;
+    }
+
+    #footerIndex .bottomFooter p {
+        font-size: .5rem;
+    }
+
+
+
+    /* -FAQ- */
+
+    .pageTitle2 {
+        top: 160px;
+        font-size: 3.5rem;
+    }
+    
+    .pageSubtitle2 {
+        top: 160px;
+        font-size: 2.5rem;
+    }
+    
+    #mainContentFaq {
+        top: 300px;
+        margin-bottom: 360px;
+    }
+
+    #mainContentFaq .accordion .icon {
+        width: 20%;
+    }
+
+    #mainContentFaq .accordion h3 {
+        width: 80%;
+        font-size: .9rem;
+    }
+
+    #mainContentFaq .panel {
+        font-size: .9rem;
+    }
+
+
+
+    /* -SOBRE- */
+
+    .pageTitle {
+        top: 150px;
+        left: 30px;
+    }
+
+    #aboutFirstPart {
+        top: 260px;
+    }
+
+    #aboutSecondPart {
+        margin-top: 320px;
+    }
+}

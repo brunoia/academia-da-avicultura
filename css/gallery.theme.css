@@ -1,0 +1,188 @@
+a, li, button {
+  text-decoration: none;
+  color: var(--orange-pan);
+}
+
+.gallery {
+  position: relative;
+  flex-basis: 70%;
+  margin: 30px 0 0 20px;
+}
+
+.gallery h3 {
+  color: var(--orange-pan); 
+  font-size: 1.2rem;
+}
+
+.gallery p {
+  margin: 10px 0 20px 0;
+  color: var(--black);
+  font-style: italic;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.gallery h4 {
+  color: var(--orange-pan);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.gallery .item {
+  height: 170px;
+  overflow: hidden;
+}
+
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 4.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+
+@media screen and (max-width: 1175px) {
+  .gallery h3 {
+    font-size: 1.1rem;
+  }
+  
+  .gallery p {
+    margin: 10px 0 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  .gallery h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery h3 {
+    font-size: 1.1rem;
+  }
+  
+  .gallery p {
+    font-size: 0.9rem;
+  }
+  
+  .gallery h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #testimonialsIntro h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #testimonialsIntro h1 {
+    font-size: 1.4rem;
+  }
+
+  #testimonialsIntro h2 {
+      font-size: 1.6rem;
+  }
+
+  .gallery h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #testimonialsIntro h1 {
+    font-size: 1.6rem;
+  }
+
+  #testimonialsIntro h2 {
+      font-size: 2.2rem;
+  }
+
+  .gallery h3 {
+    font-size: 1.2rem;
+  }
+
+  .gallery p {
+    font-size: 1rem;
+  }
+  
+  .gallery h4 {
+    font-size: 1.2rem;
+  }
+
+  .gallery .item {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #testimonialsIntro h1 {
+    font-size: 1.5rem;
+  }
+  
+  #testimonialsIntro h2 {
+    font-size: 2rem;
+  }
+
+  .gallery .item {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #testimonialsIntro h1 {
+    font-size: 1.4rem;
+  }
+
+  #testimonialsIntro h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery h3 {
+    font-size: 1.1rem;
+  }
+  
+  .gallery h4 {
+    font-size: 1.1rem;
+  }
+  
+  .gallery .item {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #testimonialsIntro h1 {
+    font-size: 1.2rem;
+  }
+
+  #testimonialsIntro h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery h3 {
+    font-size: 1rem;
+  }
+  
+  .gallery h4 {
+    font-size: 1rem;
+  }
+  
+  .gallery .item {
+    height: 300px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Ildebrando Almeida">
+    <meta name="reply-to" content="dev@brunoialmeida.com">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="assets/font awesome/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/gallery.min.css">
+    <link rel="stylesheet" href="./css/gallery.theme.css">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1adea7c8a3.js" crossorigin="anonymous"></script>
+    <title>Academia da Avicultura | Home</title>
+    <meta name="description" content="Academia da Avicultura: Ciência para o campo. Os melhores cursos online na área de avicultura">
+</head>
+<body>
+    <img id="mainBanner" src="./assets/banner/BANNER_PRINCIPAL_SEM_FRANGO_1920x780px.jpg" alt="Banner de fundo laranja" loading="lazy" width="1920px" height="780px">
+    
+    <div class="container">
+        <header>
+            <a href="index.html"><img id="logo" src="./assets/logo/LOGO_205x85px_Final.png" alt="Logo Academia da Avicultura" loading="lazy" width="205px" height="85px"></a>
+            <nav class="menuDesktop">
+                <ul class="navLinks">
+                    <li><a href="https://academiadavicultura.eadbox.com/courses">CURSOS</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/combos/short-talks">SHORT TALKS</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/combos/passe-livre-1">PASSE LIVRE</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/categories/combos-100">COMBOS</a></li>
+
+                    <li><a href="faq.html">FAQ</a></li>
+
+                    <li><a href="sobre.html">SOBRE</a></li> 
+                    
+                    <li><a href="https://academiadavicultura.eadbox.com/support">ATENDIMENTO</a></li> 
+                </ul>
+                <a class="login" href="https://academiadavicultura.eadbox.com/login">LOGIN</a>
+                <a class="cadastro" href="https://academiadavicultura.eadbox.com/cadastro">CADASTRE-SE</a>
+            </nav>
+            <nav class="menuMobile">
+                <span id="burgerIcon" class="showIcon" onclick="showIcon()"><i class="fas fa-bars fa-2x"></i></span>
+                <span id="closeIcon" class="hideIcon" onclick="hideIcon()"><i class="fas fa-times fa-2x"></i></span>
+                <ul class="navLinksMobile">
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/courses">CURSOS</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/combos/short-talks">SHORT TALKS</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/combos/passe-livre-1">PASSE LIVRE</a></li>
+
+                    <li><a href="https://academiadavicultura.eadbox.com/categories/combos-100">COMBOS</a></li>
+
+                    <li><a href="faq.html">FAQ</a></li>
+
+                    <li><a href="sobre.html">SOBRE</a></li> 
+                    
+                    <li><a href="https://academiadavicultura.eadbox.com/support">ATENDIMENTO</a></li>    
+
+                    <li><a class="loginMobile" href="https://academiadavicultura.eadbox.com/login">LOGIN</a></li>
+
+                    <li><a class="cadastroMobile" href="https://academiadavicultura.eadbox.com/cadastro">CADASTRE-SE</a></li>
+                </ul>    
+            </nav>
+        </header>
+
+        <section id="ctaBanner" >
+            <div id="banner1" class="show">
+                <h1>CIÊNCIA PARA O CAMPO</h1>
+                <div class="line"></div>
+                <h2>
+                    SOMOS A PRIMEIRA ESCOLA 
+                    <br class="sameLine">
+                    DE AVICULTURA DO BRASIL 
+                    <br>
+                    <span style="color: var(--corn);">100% ONLINE</span>   
+                </h2>
+                <p>
+                    Oferecemos cursos de aprimoramento e atualização
+                    <br class="sameLine">
+                    profissional em diversas áreas da avicultura
+                    <br class="sameLine">
+                    de forma flexível e acessível!
+                </p>
+                <a class="ctaBannerBtn" href="https://academiadavicultura.eadbox.com/courses">Confira nossos cursos</a>
+                <div class="banner1Btn btnChecked" onclick="show()"></div>
+                <div class="banner2Btn" onclick="hide()"></div>
+            </div>
+            <div id="banner2" class="hide">
+                <h1>PASSE LIVRE</h1>
+                <div class="line"></div>
+                <h2>
+                    QUER APRIMORAR SEUS 
+                    <br class="sameLine">
+                    CONHECIMENTOS NA AVICULTURA? 
+                    <br>
+                    <span style="color: var(--corn);">ENTÃO VEM COM A GENTE!</span>   
+                </h2>
+                <p>
+                    Aprofunde-se em diversas áreas da avicultura
+                    <br class="sameLine">
+                    com o Passe Livre. Ele dá acesso a TODOS
+                    <br class="sameLine">
+                    os cursos durante 6 meses!
+                </p>
+                <a class="ctaBannerBtn" href="https://academiadavicultura.eadbox.com/combos/passe-livre-1">Confira o preço especial</a>
+                <div class="banner1Btn" onclick="show()"></div>
+                <div class="banner2Btn btnChecked" onclick="hide()"></div>
+            </div>
+            <img id="frangoBanner" src="./assets/banner/FRANGUINHO_01_2.png" alt="Frango Mascote" loading="lazy" width="675px" height="491px">      
+        </section>
+
+        <div class="maoFrango">
+            <img id="maoFrangoBanner" src="./assets/banner/FRANGUINHO_MAO_03_2.png" alt="Mão Frango Mascote" loading="lazy" width="106px" height="183px">
+        </div>
+        
+        <section id="ctaBalloons">
+            <div class="balloons">
+                <a href="https://academiadavicultura.eadbox.com/combos/passe-livre-1">
+                    <img class="BalloonSize" src="./assets/botao_menu/02 - PASSE LIVRE_264x330px_CORRETO.png" onmouseover="this.src='./assets/botao_menu/02 - PASSE LIVRE MOUSE_264x330px.png'" onmouseout="this.src='./assets/botao_menu/02 - PASSE LIVRE_264x330px_CORRETO.png'" alt="Passe Livre saiba mais" loading="lazy" width="264px" height="330px">
+                </a>
+                    
+                <a href="https://academiadavicultura.eadbox.com/courses">
+                    <img class="BalloonSize" src="./assets/botao_menu/03 - CURSOS_264x330px_CORRETO.png" onmouseover="this.src='./assets/botao_menu/03 - CURSOS MOUSE_264x330px.png'" onmouseout="this.src='./assets/botao_menu/03 - CURSOS_264x330px_CORRETO.png'" alt="Cursos saiba mais" loading="lazy" width="264px" height="330px">
+                </a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/combos-100">
+                    <img class="BalloonSize" src="./assets/botao_menu/04 - COMBOS_264x330px_CORRETO.png" onmouseover="this.src='./assets/botao_menu/04 - COMBO MOUSE_264x330px.png'" onmouseout="this.src='./assets/botao_menu/04 - COMBOS_264x330px_CORRETO.png'" alt="Combos saiba mais" loading="lazy" width="264px" height="330px">
+                </a>
+
+                <a href="https://academiadavicultura.eadbox.com/combos/short-talks">
+                    <img class="BalloonSize" src="./assets/botao_menu/01 - SHORT TALKS_264x330px_CORRETO.png" onmouseover="this.src='./assets/botao_menu/01 - SHORT TALKS MOUSE_264x330px.png'" onmouseout="this.src='./assets/botao_menu/01 - SHORT TALKS_264x330px_CORRETO.png'" alt="Short Talks saiba mais" loading="lazy" width="264px" height="330px">
+                </a>            
+            </div>
+        </section>
+
+        <section id="ctaButtons">
+            <a id="todosCursosBtn" href="https://academiadavicultura.eadbox.com/courses"><img src="./assets/botao_menu/VEJA TODOS OS CURSOS_264x46px_CORRETO.png" onmouseover="this.src='./assets/botao_menu/VEJA TODOS OS CURSOS_MOUSE_264x46px_CORRETO.png'" onmouseout="this.src='./assets/botao_menu/VEJA TODOS OS CURSOS_264x46px_CORRETO.png'" alt="Botão Veja todos os cursos" loading="lazy" width="264px" height="46px"></a>
+        </section>
+
+        <section id="ourHistory">
+            <h1>NOSSA HISTÓRIA</h1>
+            <h2>
+                Conheça a Academia <br>
+                da Avicultura.
+            </h2>
+            <p>
+                Nascemos do sonho de três jovens profissionais em facilitar a entrada de ciência e novas tecnologias no campo! <br>
+                Nosso desejo é que todos os profissionais do Brasil permaneçam atualizados e tomem decisões baseadas na ciência e, assim, melhorem seus resultados de campo e impactem positivamente a avicultura brasileira.
+            </p>
+        </section>
+    </div>   
+
+    <section id="benefits">
+        <img class="desktopImg" src="./assets/vantagens/Banner_Vantagem_Completo_1920x584_desktop.png" alt="Banner com Listagem das Vantagens" loading="lazy" width="1920px" height="584px">  
+        <div class="container">
+            <img class="mobileImg" src="./assets/vantagens/VANTAGENS_1024_578_mobile.png" alt="Banner com Listagem das Vantagens" loading="lazy" width="1024px" height="578px">    
+            <div class="mobileImg540">
+                <h2>Por que ser nosso aluno?</h2>
+                <h3>Aprenda com profissionais renomados no Brasil e no exterior sem sair de casa!</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <strong><i>Horário flexível!</i></strong>
+                            Nossas aulas gravadas possibilitam que você defina o melhor horário. Você encaixa o curso na sua vida, não o contrário!
+                        </p>    
+                    </li>
+                    <li>
+                        <p>
+                            <strong><i>Você aprende!</i></strong>
+                            Você poderá assistir as videoaulas quantas vezes quiser e interagir com o professor através de fóruns exclusivos*.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong><i>Materiais complementares!</i></strong>
+                            Além da apostila do curso você poderá se aprofundar ainda mais com materiais escolhidos especialmente pelos nossos professores (textos, vídeos, artigos).
+                        </p>  
+                    </li>
+                    <li>
+                        <p>
+                            <strong><i>Certificação:</i></strong>
+                            Todos nossos cursos possuem certificado de conclusão.
+                        </p>   
+                    </li>
+                </ul>
+                <h4>*dentro do período de vigência do curso!</h4>
+            </div> 
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="categories">
+            <h1>CURSOS</h1>
+            <h2>
+                Nossos cursos <br>
+                por categoria.
+            </h2>
+            <div id="ctaCategories">
+                <a href="https://academiadavicultura.eadbox.com/categories/saude-intestinal"><img class="categoriesBalloonSize" src="./assets/botao_temas/01 - SAUDE INTESTINAL_2_146x190.png" onmouseover="this.src='./assets/botao_temas/01 - SAUDE INTESTINAL_2_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/01 - SAUDE INTESTINAL_2_146x190.png'" alt="Botão Saúde Intestinal" loading="lazy" width="146px" height="190px"></a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/nutricao-24"><img class="categoriesBalloonSize" src="./assets/botao_temas/02 - NUTRICAO_2_146x190.png" onmouseover="this.src='./assets/botao_temas/02 - NUTRICAO_2_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/02 - NUTRICAO_2_146x190.png'" alt="Botão Nutrição" loading="lazy" width="146px" height="190px"></a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/estatistica-2"><img class="categoriesBalloonSize" src="./assets/botao_temas/03 - ESTATISTICA_2_146x190.png" onmouseover="this.src='./assets/botao_temas/03 - ESTATISTICA_2_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/03 - ESTATISTICA_2_146x190.png'" alt="Botão Estatística" loading="lazy" width="146px" height="190px"></a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/sanidade-1"><img class="categoriesBalloonSize" src="./assets/botao_temas/04 - SANIDADE_2_146x190.png" onmouseover="this.src='./assets/botao_temas/04 - SANIDADE_2_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/04 - SANIDADE_2_146x190.png'" alt="Botão Sanidade" loading="lazy" width="146px" height="190px"></a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/producao-e-manejo"><img class="categoriesBalloonSize" src="./assets/botao_temas/05 - PRODUCAO E MANEJO_146x190.png" onmouseover="this.src='./assets/botao_temas/05 - PRODUCAO E MANEJO_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/05 - PRODUCAO E MANEJO_146x190.png'" alt="Botão Bem-Estar" loading="lazy" width="146px" height="190px"></a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/incubacao-1"><img class="categoriesBalloonSize" src="./assets/botao_temas/06 - INCUBACAO_146x190.png" onmouseover="this.src='./assets/botao_temas/06 - INCUBACAO_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/06 - INCUBACAO_146x190.png'" alt="Botão Poedeiras" loading="lazy" width="146px" height="190px"></a>
+
+                <a href="https://academiadavicultura.eadbox.com/categories/poedeiras"><img class="categoriesBalloonSize" src="./assets/botao_temas/07 - POEDEIRAS_2_146x190.png" onmouseover="this.src='./assets/botao_temas/07 - POEDEIRAS_2_146x190_MOUSE.png'" onmouseout="this.src='./assets/botao_temas/07 - POEDEIRAS_2_146x190.png'" alt="Botão Perus" loading="lazy" width="146px" height="190px"></a>
+            </div>
+        </section>
+
+        <section id="featuredCourses">
+            <h2 class="featCoursesTitle">
+                Confira alguns <br>
+                dos nossos cursos.
+            </h2>
+            <div class="centerCourses">
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/biosseguridade-na-producao-avicola" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/12.png" alt="Banner Biosseguridade na produção avícola" loading="lazy" width="266px" height="158px"> 
+                        </a>  
+                        <h2><strong>BIOSSEGURIDADE NA PROD. AVÍCOLA</strong></h2>
+                        <p><i>(Professor: Med. Vet. Eduardo Conte)</i></p>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/biosseguridade-na-producao-avicola" target="_blank">Saiba mais</a>
+                    </div> 
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/alternativas-aos-antibioticos-promotores-de-crescimento" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/11.png" alt="Banner Alternativas aos Promotores de Crescimento" loading="lazy" width="266px" height="158px">
+                        </a>
+                        <h2><strong>ALTERNATIVAS AOS APCs</strong></h2>
+                        <p><i>(Professor: MSc. Fabrizio Matté)</i></p>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/alternativas-aos-antibioticos-promotores-de-crescimento" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/melhorando-a-qualidade-de-ovos-atraves-da-nutricao-de-poedeiras" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/10.png" alt="Banner Melhorando a Qualidade de Ovos" loading="lazy" width="266px" height="158px">
+                        </a>
+                        <h2><strong>MELHORANDO A QUALIDADE DE OVOS</strong></h2>
+                        <p><i>(Professora: Dra. Michele Mendonça)</i></p>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/melhorando-a-qualidade-de-ovos-atraves-da-nutricao-de-poedeiras" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/manejo-da-temperatura-embrionaria-antes-durante-e-apos-a-incubacao" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/9.png" alt="Banner Manejo da Temperatura Embrionária" loading="lazy" width="266px" height="158px">
+                        </a>
+                        <h2><strong>MANEJO DA TEMPERATURA EMBRIONÁRIA</strong></h2>
+                        <p><i>(Professora: Aline Kuntze Ferreira)</i></p>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/manejo-da-temperatura-embrionaria-antes-durante-e-apos-a-incubacao" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/doenca-de-gumboro-atualizacoes-e-ferramentas-de-controle" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/0.png" alt="Banner Doença de Gumboro" loading="lazy" width="266px" height="158px">
+                        </a>
+                        <h2><strong>DOENÇA DE GUMBORO</strong></h2>
+                        <p><i>(Professora: MSc. Eva Hunka)</i></p>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/doenca-de-gumboro-atualizacoes-e-ferramentas-de-controle" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/incubacao-de-ovos" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/1.png" alt="Banner Incubando com Maestria" loading="lazy" width="266px" height="158px">
+                        </a>
+                        <h2><strong>INCUBANDO COM MAESTRIA </strong></h2>
+                        <p><i>(Professor: MSc. Felipe Kroetz Neto)</i></p>  
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/incubacao-de-ovos" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/problemas-locomotores-em-aves-1" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/2.png" alt="Banner Problemas Locomotores" loading="lazy" width="266px" height="158px"> 
+                        </a> 
+                        <h2><strong>PROBLEMAS LOCOMOTORES</strong></h2>
+                        <p><i>(Professora: Dra. Larissa Pickler)</i></p>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>R$367,00</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/problemas-locomotores-em-aves-1" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+                <div class="bannersCourses">
+                    <div class="boxSingleCourse">
+                        <a href="https://academiadavicultura.eadbox.com/courses/ebook-saude-intestinal" target="_blank">
+                            <img class="bannersCoursesSize" src="./assets/cursos_destaques/Ebook.png" alt="Banner E-Book Saúde Intestinal" loading="lazy" width="266px" height="158px"> 
+                        </a>  
+                        <h2><strong>E-BOOK SAÚDE INTESTINAL</strong></h2>
+                    </div>
+                    <hr>
+                    <div class="space-between">
+                        <h2>Grátis</h2>
+                        <a href="https://academiadavicultura.eadbox.com/courses/ebook-saude-intestinal" target="_blank">Saiba mais</a>
+                    </div>    
+                </div>
+            </div>
+
+            <div id="buttonContainer">
+                <a id="seeMoreBtn" href="https://academiadavicultura.eadbox.com/courses"><img src="./assets/botao_menu/VEJA TODOS OS CURSOS_264x46px_CORRETO.png" onmouseover="this.src='./assets/botao_menu/VEJA TODOS OS CURSOS_MOUSE_264x46px_CORRETO.png'" onmouseout="this.src='./assets/botao_menu/VEJA TODOS OS CURSOS_264x46px_CORRETO.png'" alt="Botão Veja todos os cursos" loading="lazy" width="264px" height="46px"></a>
+            </div>    
+        </section>
+
+        <section id="testimonialsSection">
+            <div id="testimonialsIntro">
+                <h1>QUEM JÁ FEZ APROVA!</h1>
+                <h2>Veja o que os alunos <br>
+                    falam sobre nossos <br>
+                    cursos ;)
+                </h2>
+            </div>
+            <div class="gallery items-5">
+                <div id="item-1" class="control-operator"></div>
+                <div id="item-2" class="control-operator"></div>
+                <div id="item-3" class="control-operator"></div>
+                <div id="item-4" class="control-operator"></div>
+                <div id="item-5" class="control-operator"></div>
+
+                <figure class="item">
+                    <h3>Incubando com Maestria</h3>
+                    <p>"Fiquei lisonjeado em poder fazer este curso, muito aprendizado desde o primeiro módulo. Obrigado a toda a equipe e ao professor por compartilhar todo esse ensinamento. Gratidão!"</p>
+                    <h4>- Saimon de Souza</h4>
+                </figure>
+                <figure class="item">
+                    <h3>Vacinação em Aves</h3>
+                    <p>"Eduardo Muniz aborda o processo de vacinação em aves industriais, com uma abordagem prática da ciência envolvida nas técnicas de vacinação, sempre visando otimização da performance e da imunidade das aves."</p>
+                    <h4>- Ismael França</h4>
+                </figure>
+                <figure class="item">
+                    <h3>Produção de frangos sem o uso de antibióticos promotores de crescimento</h3>
+                    <p>"Um curso com tema bastante atual e relevante. Além disso, a apresentadora é bastante didática e apresenta muito domínio sobre o tema pois foi seu objeto de pesquisa. Gostei! Recomendo!!"</p>
+                    <h4>- Maria Sara Cabrera Mendéz</h4>
+                </figure>
+                <figure class="item">
+                    <h3>Coccidiose</h3>
+                    <p>"Adquiri o combo de saúde intestinal, eu fiz todos os cursos. Esse foi o melhor de todos, a professora fez um material de ponta, que em nenhum dos outros eu vi. Ela fez uma apostila extremamente didática e com muito conteúdo, didática maravilhosa, recomendo muito!!"</p>
+                    <h4>- Natália Simões Fontana</h4>
+                </figure>
+                <figure class="item">
+                    <h3>Nutrição e Imunidade</h3>
+                    <p>Gostaria de deixar registrado minha satisfação pela excelente explanação do dr. Leandro durante todo curso de imunonutrição na Academina da Avicultura. Muito relevante os vídeos assim como todo material didático. Show e parabéns.</p>
+                    <h4>- Rodrigo Harmes Malta</h4>
+                </figure>
+
+                <div class="controls">
+                    <a href="#item-1" class="control-button">.</a>
+                    <a href="#item-2" class="control-button">.</a>
+                    <a href="#item-3" class="control-button">.</a>
+                    <a href="#item-4" class="control-button">.</a>
+                    <a href="#item-5" class="control-button">.</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="differentials">
+        <div class="container">
+            <div id="differentialsTexts">
+                <div id="differentialsTitles">
+                    <h1>O SEU DIFERENCIAL</h1>
+                    <h2>Atualize-se <br>
+                        e voe alto.
+                    </h2>
+                </div>
+                <div id="differentialsMainParagraph">
+                    <p>Manter-se qualificado e se diferenciar no mercado de trabalho requer tempo e disposição, ainda mais em um setor em constante evolução como é a avicultura! Para te ajudar nós oferecemos cursos de alto impacto trazendo o que de há de mais novo na ciência avícola.
+                    </p>
+                </div>
+            </div>
+            <div id="differentialsIcons">
+                <figure>
+                    <img src="./assets/icones_diferenciais/01 - MENTORIA_110x108px - CORRETO.png" alt="Ícone Mentoria" loading="lazy" width="110px" height="108px">
+                    <figcaption>
+                        <h2><strong>MENTORIA</strong></h2> 
+                        <span></span>
+                        <p>Você contará com professores e uma equipe altamente qualificada para atender as suas dúvidas.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/icones_diferenciais/02 - DIDATICA_114x108px - CORRETO.png" alt="Ícone Didática" loading="lazy" width="114px" height="108px">
+                    <figcaption>
+                        <h2><strong>DIDÁTICA</strong></h2> 
+                        <span></span>
+                        <p>Seu tempo é valioso, por isso as aulas são planejadas para garantir o máximo  aprendizado.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/icones_diferenciais/03 - CIENCIA_110x108px - CORRETO.png" alt="Ícone Ciência Para o Campo" loading="lazy" width="110px" height="108px">
+                    <figcaption>
+                        <h2><strong>CIÊNCIA PARA O CAMPO</strong></h2> 
+                        <span></span>
+                        <p>Trazemos as novidades científicas e de inovação avícola para você.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/icones_diferenciais/04 - ACESSIBILIDADE_110x108px - CORRETO.png" alt="Ícone Acessibilidade" loading="lazy" width="110px" height="108px">
+                    <figcaption>
+                        <h2><strong>ACESSIBILIDADE</strong></h2> 
+                        <span></span>
+                        <p>Estude de onde e quando quiser! Você só precisa de um notebook, tablet ou celular e acesso à internet!</p>
+                    </figcaption>
+                </figure>
+            </div>    
+        </div>
+    </section>
+
+    <section id="students">
+        <div class="container">
+            <h2 class="students-title">Confira de onde são alguns de nossos alunos:</h2>
+            <div class="center-student">
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0010_Brf.png" alt="Logo BRF" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0001_Vibra.png" alt="Logo Vibra" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0002_Vetanco.png" alt="Logo Vetanco" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0003_Phytobiotics.png" alt="Logo Phytobiotics" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0007_De Heus.png" alt="Logo De Heus" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0004_Phibro.png" alt="Logo Phibro" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0005_Languiru.png" alt="Logo Languiru" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0006_Guabi.png" alt="Logo Guabi" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0000_Zoetis.png" alt="Logo Zoetis" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0008_Globoaves.png" alt="Logo Globoaves" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0009_Cialne.png" alt="Logo Cialne" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0011_Boehringer.png" alt="Logo Boehringer Ingelheim" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0012_AlliZ.png" alt="Logo Alliz" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+                <div class="student-wraper">
+                    <div class="box-single-student">
+                        <img src="./assets/PARCEIROS/LOGO_PARCEIROS_0013_MCassab.png" alt="Logo MCassab" loading="lazy" width="200px" height="80px">
+                        <br><br><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footerIndex">
+        <div class="container">
+            <div class="centerFooter">
+                <div class="topFooter">
+                    <div class="boxSingleFooter">
+                        <a href="index.html"><img class="footerLogo" src="./assets/logo/LOGO_268x107px_Final.png" alt="Logo Academia da Avicultura Ciência Para o Campo" loading="lazy" width="268px" height="107px"></a>
+                        <div class="socialMedias">
+                            <a href="https://www.instagram.com/academiadaavicultura/" target="_blank"><img class="socialMediasSize" src="./assets/icones_redes_sociais/INSTAGRAM_48x48px.png" alt="Logo Instagram" loading="lazy" width="48px" height="48px"></a>
+
+                            <a href="https://www.facebook.com/academiadaavicultura" target="_blank"><img class="socialMediasSize" src="./assets/icones_redes_sociais/FACEBOOK_48x48px.png" alt="Logo Facebook" loading="lazy" width="48px" height="48px"></a>
+
+                            <a href="https://www.linkedin.com/company/academiadaavicultura/" target="_blank"><img class="socialMediasSize" src="./assets/icones_redes_sociais/LINKEDIN_48x48px.png" alt="Logo Linkedin" loading="lazy" width="48px" height="48px"></a>
+
+                            <a href="https://www.youtube.com/channel/UCWK0kMwc42_GGaD2jgAsBug" target="_blank"><img class="socialMediasSize" src="./assets/icones_redes_sociais/YOUTUBE_48x48px.png" alt="Logo Youtube" loading="lazy" width="48px" height="48px"></a>
+                            
+                            <a href="https://anchor.fm/academia-da-avicultura/episodes/Conhea-o-AVECAST-e118sk5" target="_blank"><img class="socialMediasSize" src="./assets/icones_redes_sociais/PODCAST_48x48px.png" alt="Logo Podcast" loading="lazy" width="48px" height="48px"></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="topFooter">
+                    <div class="boxSingleFooter space">
+                        <a href="https://academiadavicultura.eadbox.com/combos/short-talks"><h3>SHORT TALKS</h3></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/combos/passe-livre-1"><h3>PASSE LIVRE</h3></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/combos-100"><h3>COMBOS</h3></a>
+
+                        <a href="sobre.html"><h3>SOBRE</h3></a>
+
+                        <a href="faq.html"><h3>FAQ</h3></a>
+                        
+                        <a href="https://anchor.fm/academia-da-avicultura/episodes/Conhea-o-AVECAST-e118sk5" target="_blank"><h3>AVECAST</h3></a>
+                        
+                        <a href="https://academiadavicultura.eadbox.com/courses/ebook-saude-intestinal" target="_blank"><h3>EBOOK</h3></a>
+                    </div>
+                </div>
+                <div class="topFooter">
+                    <div class="boxSingleFooter space2">
+                        <a href="https://academiadavicultura.eadbox.com/courses"><h3>CURSOS</h3></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/saude-intestinal"><h4>SAÚDE INTESTINAL</h4></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/nutricao-24"><h4>NUTRIÇÃO</h4></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/estatistica-2"><h4>ESTATÍSTICA</h4></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/sanidade-1"><h4>SANIDADE</h4></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/producao-e-manejo"><h4>PRODUÇÃO E MANEJO</h4></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/incubacao-1"><h4>INCUBAÇÃO</h4></a>
+
+                        <a href="https://academiadavicultura.eadbox.com/categories/poedeiras"><h4>POEDEIRAS</h4></a>    
+                    </div>
+                </div>
+                <div class="topFooter">
+                    <div class="boxSingleFooter">
+                        <h3 class="noHover">ATENDIMENTO</h3>
+                        <a href="mailto:contato@academiadaavicultura.com.br"><h4 class="emailSize">contato@academiadaavicultura.com.br</h4></a>
+                        <div class="loginRegister">
+                            <a id="loginFooter" href="https://academiadavicultura.eadbox.com/login">LOGIN</a>
+                            <a id="registerFooter" href="https://academiadavicultura.eadbox.com/cadastro">CADASTRE-SE</a>
+                        </div>
+                    </div>
+                </div>
+                <span></span>
+                <div class="bottomFooter">
+                    <p>©2021 Academia da Avicultura.</p>
+                    <p>Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+		$('.menuMobile span').click(function (){
+			$('.menuMobile ul').slideToggle();
+		});
+	</script>
+</body>
+</html>
